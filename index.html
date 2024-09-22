@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhanced Notes App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>My Enhanced Notes</h1>
+
+        <!-- Dark Mode Toggle -->
+        <div class="top-bar">
+            <button id="toggle-dark-mode">Toggle Dark Mode</button>
+            <input type="text" id="search-bar" placeholder="Search notes..." />
+        </div>
+
+        <!-- Form to add a new note -->
+        <form id="note-form">
+            <input type="text" id="note-title" placeholder="Title" required />
+            <textarea id="note-content" placeholder="Write your note..." required></textarea>
+            <input type="text" id="note-tag" placeholder="Tag (optional)" />
+            <button type="submit">Add Note</button>
+        </form>
+
+        <!-- Section to display saved notes -->
+        <div id="notes-list"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
